@@ -33,5 +33,8 @@ class RegisterViewController: UIViewController {
         
         self.present(LoginVC, animated: true, completion: nil)
     }
+    @IBAction func BackPress(_ sender: Any) {
+        self.present(LoginVC, animated: true, completion: nil)
+    }
     
 }
