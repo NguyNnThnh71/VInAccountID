@@ -1,4 +1,4 @@
-# READ ME CAREFULLY BEFORE USE
+# READ ME CAREFULLY BEFORE USING
 ## There are 3 ViewController in this Project
 ## - 1. The LoginViewController
 - In case Users had account already -> input their information to Phonenumber and Password -> press login button to present the MainViewController
@@ -13,5 +13,6 @@
 <img width="324" alt="register" src="https://user-images.githubusercontent.com/84574760/122742405-1d256880-d2b0-11eb-8783-d036d61906c1.png">
 
 ## - 3. The MainViewController
-
+- Users information were saved from LoginViewController and RegisterViewController will be updated and shown in these following field: Name, Date of birth, Adress, Phonenumber, email
+- In case User want to go back to Login, press Back Button to present LoginViewController
 <img width="324" alt="main" src="https://user-images.githubusercontent.com/84574760/122742394-18f94b00-d2b0-11eb-9f0d-ebf028f51463.png">
