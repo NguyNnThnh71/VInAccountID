@@ -21,24 +21,22 @@ class LoginViewController: UIViewController {
     
     @IBAction func onPressMain(_ sender: UIButton) {
 
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let mainVC = MainViewController()
         
 
-        let mainVC = storyboard.instantiateViewController(identifier: "MainViewController") as MainViewController
+        guard let phoneText = phoneTextField.text else { return }
         
 
-        guard let phone = phoneTextField.text else { return }
-        
-
-        mainVC.phoneTextField.text = phone
-        
+        mainVC.phone = phoneText
+        mainVC.modalPresentationStyle = .fullScreen
        
         self.present(mainVC, animated: true, completion: nil)
         
     }
     
     @IBAction func onPressRegister(_ sender: UIButton) {
-        let registerVC = RegisterViewController()
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let registerVC = storyboard.instantiateViewController(identifier: "RegisterViewController") as RegisterViewController
         
     
         registerVC.modalPresentationStyle = .fullScreen
@@ -47,5 +45,8 @@ class LoginViewController: UIViewController {
         self.present(registerVC, animated: true, completion: nil)
     }
     
+    @IBAction func BackPress(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
 }

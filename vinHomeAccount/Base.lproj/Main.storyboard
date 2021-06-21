@@ -20,16 +20,18 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="404"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AkZ-9e-9Ga">
-                                <rect key="frame" x="20" y="44" width="88" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AkZ-9e-9Ga">
+                                <rect key="frame" x="20" y="58" width="35" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="Button">
-                                    <color key="titleColor" systemColor="tertiarySystemBackgroundColor"/>
+                                    <color key="titleColor" systemColor="systemBlueColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="BackPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TrE-xg-cRn"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dK1-0Z-FyR">
-                                <rect key="frame" x="277" y="731" width="88" height="44"/>
+                                <rect key="frame" x="279" y="714" width="88" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="Button">
@@ -40,16 +42,29 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gnW-Ul-3Yb">
-                                <rect key="frame" x="20" y="477" width="374" height="34"/>
+                                <rect key="frame" x="20" y="423" width="374" height="39.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lyq-ex-g9h">
-                                <rect key="frame" x="20" y="554" width="374" height="34"/>
+                                <rect key="frame" x="20" y="491" width="374" height="39.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hotline: 1800 1186" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7i4-1W-S37">
+                                <rect key="frame" x="132" y="840" width="150" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" systemColor="linkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mật khẩu" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s3a-Am-qx3">
+                                <rect key="frame" x="20" y="547" width="374" height="39.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -57,14 +72,14 @@
                     </view>
                     <connections>
                         <outlet property="BackButton" destination="AkZ-9e-9Ga" id="ppu-a7-tZc"/>
-                        <outlet property="NameUI" destination="gnW-Ul-3Yb" id="xVO-nc-j7V"/>
-                        <outlet property="RegisterButton" destination="AkZ-9e-9Ga" id="bhc-nf-KaU"/>
+                        <outlet property="NameUI" destination="lyq-ex-g9h" id="eTo-d4-5lJ"/>
+                        <outlet property="RegisterButton" destination="dK1-0Z-FyR" id="Urb-RN-LOi"/>
                         <outlet property="phoneNumberUI" destination="gnW-Ul-3Yb" id="iNA-ud-Rny"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1555" y="58"/>
+            <point key="canvasLocation" x="1553.6231884057972" y="57.589285714285708"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="EHh-VS-chS">
@@ -157,6 +172,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tertiarySystemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

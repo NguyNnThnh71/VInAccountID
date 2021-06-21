@@ -21,20 +21,27 @@ class RegisterViewController: UIViewController {
         phoneNumberUI.keyboardType = .numberPad
         NameUI.borderStyle = .roundedRect
         phoneNumberUI.borderStyle = .roundedRect
-        BackButton.backgroundColor = UIColor(red: 0.00, green: 0.45, blue: 0.38, alpha: 1.00)
+//        BackButton.backgroundColor = UIColor(red: 0.00, green: 0.45, blue: 0.38, alpha: 1.00)
         RegisterButton.backgroundColor = UIColor(red: 0.00, green: 0.45, blue: 0.38, alpha: 1.00)
+        RegisterButton.setTitle("Đăng kí", for: .normal)
+        RegisterButton.setTitleColor(.white, for: .normal)
+        BackButton.setImage(UIImage(named: "left-arrow"), for: .normal)
+        BackButton.setTitle("", for: .normal)
+
     }
     @IBAction func RegisterPress(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let LoginVC = storyboard.instantiateViewController(identifier: "LoginViewController") as LoginViewController
-        
-        LoginVC.modalPresentationStyle = .fullScreen
-        
-        
-        self.present(LoginVC, animated: true, completion: nil)
+        let mainVC = MainViewController()
+
+        guard let phoneText = phoneNumberUI.text, let nameText = NameUI.text else { return }
+
+        mainVC.name = nameText
+        mainVC.phone = phoneText
+        mainVC.modalPresentationStyle = .fullScreen
+       
+        self.present(mainVC, animated: true, completion: nil)
     }
     @IBAction func BackPress(_ sender: Any) {
-       // self.present(LoginVC, animated: true, completion: nil)
+        self.dismiss(animated: true, completion: nil)
     }
     
 }
