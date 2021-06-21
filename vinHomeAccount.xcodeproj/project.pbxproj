@@ -18,7 +18,6 @@
 		18C9114A267F197B000C5FEB /* vinHomeAccountUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C91149267F197A000C5FEB /* vinHomeAccountUITests.swift */; };
 		18C91158267F19DB000C5FEB /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C91157267F19DB000C5FEB /* RegisterViewController.swift */; };
 		48BA2F15267F06EF0034F69A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BA2F14267F06EF0034F69A /* LoginViewController.swift */; };
-
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +55,6 @@
 		18C9114B267F197B000C5FEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18C91157267F19DB000C5FEB /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		48BA2F14267F06EF0034F69A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +82,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C7F2F2726806F9E00E3EE65 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		18C9111B267F197A000C5FEB = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +96,7 @@
 				18C9113D267F197A000C5FEB /* vinHomeAccountTests */,
 				18C91148267F197A000C5FEB /* vinHomeAccountUITests */,
 				18C91125267F197A000C5FEB /* Products */,
+				0C7F2F2726806F9E00E3EE65 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,12 +119,10 @@
 				0C9BEF5A267F3B8E00D7978C /* MainViewController.swift */,
 				0C9BEF5B267F3B8E00D7978C /* MainViewController.xib */,
 				18C91130267F197A000C5FEB /* Assets.xcassets */,
+				18C9112D267F197A000C5FEB /* Main.storyboard */,
 				18C91132267F197A000C5FEB /* LaunchScreen.storyboard */,
 				18C91135267F197A000C5FEB /* Info.plist */,
-				48BA2F04267F06B30034F69A /* ViewController.swift */,
-				48BA2F06267F06B30034F69A /* Main.storyboard */,
 				48BA2F14267F06EF0034F69A /* LoginViewController.swift */,
-				48BA2F0E267F06B40034F69A /* Info.plist */,
 			);
 			path = vinHomeAccount;
 			sourceTree = "<group>";
@@ -277,7 +281,6 @@
 				18C91158267F19DB000C5FEB /* RegisterViewController.swift in Sources */,
 				0C9BEF5C267F3B8E00D7978C /* MainViewController.swift in Sources */,
 				48BA2F15267F06EF0034F69A /* LoginViewController.swift in Sources */,
-
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +386,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				"INFOPLIST_FILE[sdk=*]" = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;

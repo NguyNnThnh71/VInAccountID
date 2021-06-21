@@ -15,7 +15,7 @@ class RegisterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        NameUI.placeholder = " Họ và tên"
+        NameUI.placeholder = "Họ và tên"
         phoneNumberUI.placeholder = "Số điện thoại "
         NameUI.keyboardType = .namePhonePad
         phoneNumberUI.keyboardType = .numberPad
@@ -34,7 +34,7 @@ class RegisterViewController: UIViewController {
         self.present(LoginVC, animated: true, completion: nil)
     }
     @IBAction func BackPress(_ sender: Any) {
-        self.present(LoginVC, animated: true, completion: nil)
+       // self.present(LoginVC, animated: true, completion: nil)
     }
     
 }
